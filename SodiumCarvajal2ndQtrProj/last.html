@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thankyou for adpoting</title>
+	<link rel="stylesheet" >
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<style>
+body{
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(https://i.pinimg.com/originals/cb/e4/04/cbe404f8ad7afa3ab460fa6bfa7fac3f.gif);
+	background-position: center;
+	background-size: cover;	
+	position: relative;
+	overflow:hidden;
+	font-family:cursive;
+}
+nav
+{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img
+{
+	width: 100px;
+}
+.nav-links
+{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a
+{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links ul li::after{
+	content:'';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+	width: 100%;
+}
+	</style>
+</head>
+<body>
+<section class="header">
+	<nav>
+	<a class="logo" href="Index.html"><img src="images/Logo.png"></a>
+		<div class="nav-links" id="navLinks">
+				<ul>
+					<li><a href="Cat-homepage.html" style="color:#19DEFF;">HOME</a></li>
+					<li><a href="Cat-homepage.html" style="color:#E75556;">ABOUT</a></li>
+					<li><a href="" style="color:#19DEFF;">VIDS</a></li>
+					<li><a href="" style="color:#E75556;">FAQS</a></li>
+					<li><a href="" style="color:#19DEFF;">SOCMEDS</a></li>
+				</ul>
+			</div>
+	</nav>	
+</section>
+</body>
+</html>

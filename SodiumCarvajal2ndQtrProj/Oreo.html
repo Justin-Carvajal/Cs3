@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oreo</title>
+	<link rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<style>
+	*{
+	margin: 0;
+	padding: 0;
+	font-family: cursive;	
+}
+body
+{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/67401945-34fc-46b8-8e8f-1982847277d4/ddba22b-2fad9d00-1d3f-4ec8-a65d-199a09dfa4e1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY3NDAxOTQ1LTM0ZmMtNDZiOC04ZThmLTE5ODI4NDcyNzdkNFwvZGRiYTIyYi0yZmFkOWQwMC0xZDNmLTRlYzgtYTY1ZC0xOTlhMDlkZmE0ZTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.p1RcYkkOBXh0fzpoZxaTbE1_xNWLfoLqEZv1_0utuzU);
+	background-position: center;
+	background-size: cover;	
+	position: relative;
+}
+nav
+{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img
+{
+	width: 100px;
+}
+.nav-links
+{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a
+{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links ul li::after{
+	content:'';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+	width: 100%;
+}
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 82%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h3{
+	font-size: 62px;
+	color:#19DEFF;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 14px;
+	color:#E75556;
+}
+.hero-btn
+{
+	display: inline-block;
+	text-decoration: none;
+	color: #E75556;
+	border: 1px solid #19DEFF;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	transform:translateY(-10px)
+}
+.hero-btn:hover{
+	border: 1px solid #f44336;
+	background: #f44336;
+	transition: 1s;
+	color: #19DEFF;
+}
+.img{
+	width: 280px;
+  height: 360px;
+  border-radius: 20%;
+  padding: 1.5rem;
+}
+	</style>
+</head>
+<body>
+<section class="header">
+	<nav>
+	<a class="logo" href="Index.html"><img src="images/Logo.png"></a>
+		<div class="nav-links" id="navLinks">
+				<ul>
+					<li><a href="Cat-homepage.html" style="color:#19DEFF;">HOME</a></li>
+					<li><a href="Cat-homepage.html" style="color:#E75556;">ABOUT</a></li>
+					<li><a href="" style="color:#19DEFF;">VIDS</a></li>
+					<li><a href="" style="color:#E75556;">FAQS</a></li>
+					<li><a href="" style="color:#19DEFF;">SOCMEDS</a></li>
+				</ul>
+			</div>
+	</nav>	
+<div class="text-box">
+	<h3>Oreo</h3>
+	<img class="img" src="https://images.unsplash.com/photo-1612632237538-2de30e25af6f?ixlib=rb-										4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGNhdHxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80">
+	<p>Oreo is a black and white male stray cat that was rescued by one of our staff last year. At this time he was just a kitten so we decided to nurse him until he was back to being healthy before putting him up for adoption. We named him oreo because of his fur color, and because he really likes milk, just like the sandwiches. We reallly recommend that you should apot this cat if you're an energetic person, since we 100% guarantee that he will be able to match your energy. He is also still very young so you can really build a strong relationship with him as he grows up.</p>
+	<a href="Homepage/Index.html" class="hero-btn">Click here to adopt</a>
+</div>
+</section>
+
+</body></html>

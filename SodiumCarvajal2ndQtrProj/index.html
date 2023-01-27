@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family:cursive	
+}
+body{
+	background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/67401945-34fc-46b8-8e8f-1982847277d4/ddba22b-2fad9d00-1d3f-4ec8-a65d-199a09dfa4e1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY3NDAxOTQ1LTM0ZmMtNDZiOC04ZThmLTE5ODI4NDcyNzdkNFwvZGRiYTIyYi0yZmFkOWQwMC0xZDNmLTRlYzgtYTY1ZC0xOTlhMDlkZmE0ZTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.p1RcYkkOBXh0fzpoZxaTbE1_xNWLfoLqEZv1_0utuzU");
+	background-size:cover;
+	background:-repeat;no-repeat;
+	background-position:center;
+	justify-content:center;
+	height:120vh;
+	align-items:center;
+}
+nav
+{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img
+{
+	width: 100px;
+}
+.nav-links
+{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a
+{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links ul li::after{
+	content:'';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+	width: 100%;
+}
+
+.cats {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top:70px;
+}
+.cats2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.card {
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card:hover:before {
+  opacity: 1;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+.card .info p {
+  font-size: 15px;
+  margin-top: 0px;
+  padding-bottom:10px;
+}
+.card .info h1 {
+  font-size: 30px;
+  padding-bottom:10px;
+}
+.card .info button {
+  padding:10px;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card .info button:hover {
+  background: dodgerblue;
+  color: white;
+}
+.header{
+	text-align:center;
+	color:#19DEFF;
+	font-size:30px;
+}
+</style>
+</head>
+<body>
+	<nav>
+	<a href="Index.html"><img src="images/Logo.png"></a>
+		<div class="nav-links" id="navLinks">
+				<ul>
+					<li><a href="Cat-homepage.html" style="color:#19DEFF;">HOME</a></li>
+					<li><a href="Cat-homepage.html" style="color:#E75556;">ABOUT</a></li>
+					<li><a href="" style="color:#19DEFF;">VIDS</a></li>
+					<li><a href="" style="color:#E75556;">FAQS</a></li>
+					<li><a href="" style="color:#19DEFF;">SOCMEDS</a></li>
+				</ul>
+			</div>
+	</nav>
+<section class="header">
+<h1>Available Cats</h1>
+</section class="header">
+
+	
+		<section class="cats">
+		<article  class="cats2">
+		<div class="card"><img src="https://images.unsplash.com/photo-1612632237538-2de30e25af6f?ixlib=rb-										4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGNhdHxlbnwwfHwwfHw%3D&w=1000&q=80"/>
+    		<div class="info">
+  	 	<h1>Oreo</h1>
+		<p>is a black and white male cat who was born in May 23, 2021. He likes milk. To learn more about Oreo,click the button below.</p>
+      		<button>Read More</button>
+    		</div>
+ 		</div>
+  		<div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Khaomanee_cat.jpg/1200px-Khaomanee_cat.jpg"/>
+    		<div class="info">
+      		<h1>Snow</h1>
+      		<p>is white female cat who was born in February 29, 2016. She has two different eye colors.To learn more about snow, click the button below.</p>
+      		<button>Read More</button>
+    		</div>
+  		</div>
+  		<div class="card"><img src="https://media.istockphoto.com/photos/sphynx-hairless-cat-4-years-old-against-white-background-picture-						id944073096?k=20&m=944073096&s=612x612&w=0&h=e-s-gVyBGLqwKbBIDIOtfZaiuJycw9pTHP_I9cSr4uY="/>
+    		<div class="info">
+      		<h1>Francis</h1>
+      		<p>is a hairless gay cat who was given to us on June 6, 2006. He acts in a rather evil way. To learn more about Francis click the button below.</p>
+      		<button>Read More</button>
+    		</div>
+  		</div>
+		</article>
+		</section>
+</body>
+
+
+</html>

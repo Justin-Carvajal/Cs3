@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>social medias</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<style>
+body{
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/67401945-34fc-46b8-8e8f-1982847277d4/ddba22b-2fad9d00-1d3f-4ec8-a65d-199a09dfa4e1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY3NDAxOTQ1LTM0ZmMtNDZiOC04ZThmLTE5ODI4NDcyNzdkNFwvZGRiYTIyYi0yZmFkOWQwMC0xZDNmLTRlYzgtYTY1ZC0xOTlhMDlkZmE0ZTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.p1RcYkkOBXh0fzpoZxaTbE1_xNWLfoLqEZv1_0utuzU);
+	background-position: center;
+	background-size: cover;	
+	position: relative;
+	overflow:scroll;
+	font-family:cursive;
+}
+nav
+{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img
+{
+	width: 100px;
+}
+.nav-links
+{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a
+{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links ul li::after{
+	content:'';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+	width: 100%;
+}
+.facebook {
+	background: url('images/sprite.png') 0px -110px ;
+			width: 100px;
+			height: 100px;
+	transform: scale(1.5);
+}
+.facebook:hover{
+	transform: scale(1.7);
+	transition:0.4s ease-out;
+}
+.instagram {
+	background: url('images/sprite.png') -315px -110px ;
+			width: 100px;
+			height: 100px;
+	transform: scale(1.5);
+}
+.instagram:hover{
+	transform: scale(1.7);
+	transition:0.4s ease-out;
+}
+.twitter {
+	background: url('images/sprite.png') -105px -110px ;
+			width: 100px;
+			height: 100px;
+	transform: scale(1.5);
+}
+.twitter:hover{
+	transform: scale(1.7);
+	transition:0.4s ease-out;
+}
+.socmeds{
+	display:flex;
+	width: 100%;
+  	justify-content: space-around;
+	transform:translateY(130px);
+	text-align:center;
+}
+.socmeds h4{
+	transform:translateY(-60px);
+}
+
+	</style>
+</head>
+<body>
+<section class="header">
+	<nav>
+	<a class="logo" href="Index.html"><img src="logo/Logo.png"></a>
+		<div class="nav-links" id="navLinks">
+				<ul>
+					<li><a href="Cat-homepage.html" style="color:#19DEFF;">HOME</a></li>
+					<li><a href="Cat-homepage.html" style="color:#E75556;">ABOUT</a></li>
+					<li><a href="" style="color:#19DEFF;">VIDS</a></li>
+					<li><a href="" style="color:#E75556;">FAQS</a></li>
+					<li><a href="" style="color:#19DEFF;">SOCMEDS</a></li>
+				</ul>
+			</div>
+	</nav>	
+</section>
+<section class="socmeds">
+<a href="https://www.facebook.com/BongbongMarcos/"><div class="facebook" a href="https://www.facebook.com/BongbongMarcos/">
+<h4 style="color:#19DEFF;">Facebook</h4>
+</div></a>
+<a href="https://www.instagram.com/bongbongmarcos/?hl=en"><div class="instagram">
+<h4 style="color:#19DEFF;">Instagram</h4>
+</div></a>
+<a href="https://twitter.com/bongbongmarcos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><div class="twitter">
+<h4 style="color:#19DEFF;">Twitter</h4>
+</div></a>
+
+</section>
+
+</body>
+</html>
