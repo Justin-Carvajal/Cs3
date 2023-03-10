@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>FA10_Carvajal</title>
+	</head>
+	<body>
+		<script>
+
+			var randomNum = Math.floor(Math.random()*1001);	
+			var stringNum = randomNum.toString();	
+			var ones = 0;
+			var tens = 0;
+			var hundreds = 0; 
+		
+			document.write(randomNum, "<br/>");
+		
+			if(stringNum.length == 3){
+				document.write("Breakdown: ", stringNum[0], "00, ", stringNum[1], "0, ", stringNum[2]);
+			}
+			else if(stringNum.length == 2){
+				document.write("Breakdown: 0, ", stringNum[0], "0, ", stringNum[1]);
+			}
+				else if(stringNum.length == 1){
+				document.write("Breakdown: 0, 0, ", stringNum[0]);
+			}
+		</script>
+	</body>
+</html>
