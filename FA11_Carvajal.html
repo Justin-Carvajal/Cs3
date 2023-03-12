@@ -8,16 +8,15 @@
        		var a = prompt("Enter side 1 lenght: ");
        		var b = prompt("Enter side 2 lenght: ");
 		var c = prompt("Enter side 3 lenght: ");
-		document.write( "Input: " +a+" "+b+" "+c+"<br/>")
 
             	determineTriangle(a, b, c);
                   function determineTriangle(a, b, c) {
 		    if (a == b && b == c &&  a ==c ) {
-                    document.write("<br/> Output: The triangle is EQUILATERAL.");
+                    alert("The triangle is EQUILATERAL.");
                     } else if (a == b || a == c || b == c) {
-                    document.write("<br/> Output: The triangle is ISOSCELES.");
+                    alert("The triangle is ISOSCELES.");
                     } else {
-                    document.write("<br/> Output: The triangle is SCALENE.");
+                    alert("The triangle is SCALENE.");
                     }
                 }
         </script>
