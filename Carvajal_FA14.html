@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+	<style>
+		*{
+			font-family: "Times New Roman", Times, serif;
+		}
+		body {
+			background-image:linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url("https://scontent.xx.fbcdn.net/v/t1.15752-9/344068485_256277173542925_8341078393853814459_n.png?stp=dst-png_s180x540&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeEH6l8JrvfyI_qbSjI0VdvXPm_88mobXp8-b_zyahten_n1QXrfz54Sb9ioj2FsMVnhzW-dsmpbkiBD703mvNyZ&_nc_ohc=zKCsYUN6q9cAX_Vwis_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRcJS0s6Dv0fwiudaBpHGRkx0bwKtlK5zCRMIp5EllcfQ&oe=647DC780");
+		}
+		form{
+			width: 400px;
+			margin: auto;
+		}
+		fieldset {
+			border: 2px solid black;
+			border-radius: 8px;
+			padding: 10px;
+			margin: 20px;
+			background-color:white;
+		}
+		legend {
+			font-size: 25px;
+			font-weight: bold;
+			padding: 10px;
+			color:blaack;
+		}
+		label {
+	
+			width: 100px;
+			margin-right: 10px;
+			text-align: right;
+			font-weight: bold;
+		}
+		input[type="text"], input[type="email"], input[type="password"], textarea, select {
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			padding: 5px;
+			font-size: 15px;
+			width: 200px;
+			margin-bottom: 10px;
+		}
+		input[type="submit"], input[type="reset"] {
+			background-color: #4CAF50;
+			border:none;
+			border-radius: 4px;
+			color: white;
+			cursor: pointer;
+			font-size: 17px;
+			margin-right: 10px;
+			padding: 10px;
+			text-align: center;
+			text-decoration: none;
+			width: 100px;
+		}
+		input[type="submit"]:hover, input[type="reset"]:hover {
+			background-color: #0059b3;
+			transition: background-color 0.5s ease;
+			border:none;
+		}
+	</style>
+		<title>Carvajal_FA14</title>
+	</head>
+	<body>
+		<form onsubmit="return printInputs(event);">
+			<fieldset form="input">
+				<legend>Input User Information:</legend>
+				
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" onblur="onBlur(this)" onfocus="onFocus(this)"><br/>
+
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" onblur="onBlur(this)" onfocus="onFocus(this)"><br/>
+
+				<label for="gender">Gender:</label>
+				<select id="gender" name="gender" onfocus="onFocus(this)">
+					<option value="" selected disabled></option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select><br/>
+
+				<label for="password">Password:</label>
+				<input type="password" id="pWord" name="password" onblur="onBlur(this)" onfocus="onFocus(this)"><br/>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" onblur="onBlur(this)" onfocus="onFocus(this)"><br/>
+
+				<label for="address">Address:</label>
+				<input type="text" id="address" name="address" onblur="onBlur(this)" onfocus="onFocus(this)"><br/>
+
+				<label for="description">Short self-description:</label>
+				<textarea id="description" name="description" onblur="onBlur(this)" onfocus="onFocus(this)"></textarea><br/>
+
+				<br/><input type="submit" value="Submit">
+				<input type="reset" value="Reset" onclick="resetBordersColor()">
+			</fieldset>
+		</form>
+		<fieldset form="output">
+			<legend>User Information:</legend>
+			<div id="output"></div>
+		</fieldset>
+		<script>	
+			function onBlur(elem) {
+				if (elem.value == "") {
+					elem.style.borderColor = "red";
+				}
+			}
+
+			function onFocus(elem) {
+				elem.style.borderColor = "green";
+			}
+			
+			function printInputs(event) {
+				event.preventDefault();
+				var nameInput = document.getElementById("name");
+				var usernameInput = document.getElementById("username");
+				var genderInput = document.getElementById("gender");
+				var passwordInput = document.getElementById("pWord");
+				var emailInput = document.getElementById("email");
+				var addressInput = document.getElementById("address");
+				var descriptionInput = document.getElementById("description");
+				var outputElement = document.getElementById("output");
+
+				outputElement.innerHTML = "Name: " + nameInput.value + "<br/>" +
+					"Username: " + usernameInput.value + "<br/>" +
+					"Gender: " + genderInput.value + "<br/>" +
+					"Password: " + passwordInput.value + "<br/>" +
+					"Email: " + emailInput.value + "<br/>" +
+					"Address: " + addressInput.value + "<br/>" +
+					"Description: " + descriptionInput.value + "<br/> <br/>";
+				return false;
+			}
+
+			function resetBordersColor() {
+    				document.getElementById("name").style.borderColor = "";
+    				document.getElementById("username").style.borderColor = "";
+    				document.getElementById("gender").style.borderColor = "";
+    				document.getElementById("pWord").style.borderColor = "";
+    				document.getElementById("email").style.borderColor = "";
+    				document.getElementById("address").style.borderColor = "";
+    				document.getElementById("description").style.borderColor = "";
+			}
+		</script>
+	</body>
+</html>
